@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/static/img/gallery/h1_hero.png);
+    background-size: cover;
+}
+
+.payment_div{
+    border: 1px white solid;
+    background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    height: 500px;
+    padding: 50px;
+    /*padding-top: 100px;
+    padding-bottom: 100px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.payment{
+    height: 100px;
+    align-items: center;
+    color: white;
+    width: 200px;
+    
+}

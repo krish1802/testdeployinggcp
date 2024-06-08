@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search and Hide</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="row">
+    <div id="bench">Bench Content</div>
+    <div id="back">Back Content</div>
+    <div id="triceps">Triceps Content</div>
+</div>
+
+<div class="searchbox">
+    <div class="boxit">
+        <form name="search">
+            <input type="text" class="inputit" name="txt" oninput="filterDivs(this.value)">
+        </form>
+        <i class="fas fa-search"></i>
+    </div>
+</div>
+
+<script>
+    function filterDivs(keyword) {
+        var divs = document.querySelectorAll('.row > div');
+        divs.forEach(function(div) {
+            if (div.id.toLowerCase().includes(keyword.toLowerCase())) {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+runtime: python310
+
+handlers:
+  - url: /.*
+    script: auto
+
+env_variables:
+  # Add any environment variables your Flask app requires here
+
+# Install dependencies from requirements.txt
+includes:
+  - requirements.txt
